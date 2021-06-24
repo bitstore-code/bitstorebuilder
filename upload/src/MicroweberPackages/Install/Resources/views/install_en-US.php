@@ -368,9 +368,9 @@
         <div class="card-header d-block">
             <div class="text-center my-3">
                 <?php if ($pre_configured): ?>
-                    <h4 class="text-center text-primary">Configure seu Website</h4>
+                    <h4 class="text-center text-primary">Setup your website</h4>
                 <?php else: ?>
-                    <a href="https://www.bitstore.com.br" target="_blank" id="logo"><img src="<?php print mw_includes_url(); ?>api/libs/mw-ui/assets/img/logo.svg" style="width: 250px" /></a>
+                    <a href="http://Microweber.com" target="_blank" id="logo"><img src="<?php print mw_includes_url(); ?>api/libs/mw-ui/assets/img/logo.svg" style="width: 250px" /></a>
                 <?php endif; ?>
             </div>
 
@@ -397,44 +397,44 @@
                             $server_check_errors = array();
                             if (version_compare(phpversion(), '5.4.0', '<=')) {
                                 $check_pass = false;
-                                $server_check_errors['php_version'] = _e('Você deve executar o PHP 5.4 ou superior', true);
+                                $server_check_errors['php_version'] = _e('You must run PHP 5.4 or greater', true);
                             }
 
                             if (function_exists('apache_get_modules')) {
                                 if (!in_array('mod_rewrite', apache_get_modules())) {
                                     $check_pass = false;
-                                    $server_check_errors['mod_rewrite'] = _e('mod_rewrite não está habilitado em seu servidor', true);
+                                    $server_check_errors['mod_rewrite'] = _e('mod_rewrite is not enabled on your server', true);
                                 }
                             }
 
                             if (!extension_loaded('dom')) {
                                 $check_pass = false;
-                                $server_check_errors['dom'] = _e('A extensão DOM PHP deve ser carregada', true);
+                                $server_check_errors['dom'] = _e('The DOM PHP extension must be loaded', true);
                             }
 
                             if (!extension_loaded('curl')) {
                                 $check_pass = false;
-                                $server_check_errors['curl'] = _e('A extensão Curl do PHP deve ser carregada', true);
+                                $server_check_errors['curl'] = _e('The Curl PHP extension must be loaded', true);
                             }
 
                             if (!extension_loaded('curl')) {
                                 $check_pass = false;
-                                $server_check_errors['curl'] = _e('A extensão Curl do PHP deve ser carregada', true);
+                                $server_check_errors['curl'] = _e('The Curl PHP extension must be loaded', true);
                             }
 
                             if (!extension_loaded('xml')) {
                                 $check_pass = false;
-                                $server_check_errors['xml'] = _e('A extensão lib-xml PHP deve ser carregada', true);
+                                $server_check_errors['xml'] = _e('The lib-xml PHP extension must be loaded', true);
                             }
 
                             if (!extension_loaded('curl')) {
                                 $check_pass = false;
-                                $server_check_errors['curl'] = _e('A extensão Curl do PHP deve ser carregada', true);
+                                $server_check_errors['curl'] = _e('The Curl PHP extension must be loaded', true);
                             }
 
                             if (!extension_loaded('json')) {
                                 $check_pass = false;
-                                $server_check_errors['json'] = _e('A extensão json PHP deve ser carregada', true);
+                                $server_check_errors['json'] = _e('The json PHP extension must be loaded', true);
                             }
 
                             $is_pdo_loaded = false;
@@ -462,44 +462,44 @@
 
                             if ($is_pdo_loaded == false) {
                                 $check_pass = false;
-                                $server_check_errors['pdo'] = 'A extensão PDO MYSQL PHP deve ser carregada';
+                                $server_check_errors['pdo'] = 'The PDO MYSQL PHP extension must be loaded';
                             }
 
                             if (extension_loaded('gd') && function_exists('gd_info')) {
                             } else {
                                 $check_pass = false;
-                                $server_check_errors['gd'] = _e('A extensão GD deve ser carregada em PHP', true);
+                                $server_check_errors['gd'] = _e('The GD extension must be loaded in PHP', true);
                             }
 
                             if (defined('MW_USERFILES') and is_dir(MW_USERFILES) and !is_writable(MW_USERFILES)) {
                                 $check_pass = false;
                                 $must_be = MW_USERFILES;
-                                $server_check_errors['MW_USERFILES'] = _e('O diretório ' . MW_USERFILES . ' deve ser gravável', true);
+                                $server_check_errors['MW_USERFILES'] = _e('The directory ' . MW_USERFILES . ' must be writable', true);
                             }
 
                             if (defined('MW_CACHE_ROOT_DIR') and is_dir(MW_CACHE_ROOT_DIR) and !is_writable(MW_CACHE_ROOT_DIR)) {
                                 $check_pass = false;
                                 $must_be = MW_CACHE_ROOT_DIR;
-                                $server_check_errors['MW_CACHE_ROOT_DIR'] = _e('O diretório ' . MW_CACHE_ROOT_DIR . ' deve ser gravável', true);
+                                $server_check_errors['MW_CACHE_ROOT_DIR'] = _e('The directory ' . MW_CACHE_ROOT_DIR . ' must be writable', true);
                             }
 
                             if (defined('MW_CACHE_ROOT_DIR') and is_dir(MW_CACHE_ROOT_DIR) and !is_writable(MW_CACHE_ROOT_DIR)) {
                                 $check_pass = false;
                                 $must_be = MW_CACHE_ROOT_DIR;
-                                $server_check_errors['MW_CACHE_ROOT_DIR'] = _e('O diretório ' . MW_CACHE_ROOT_DIR . ' deve ser gravável', true);
+                                $server_check_errors['MW_CACHE_ROOT_DIR'] = _e('The directory ' . MW_CACHE_ROOT_DIR . ' must be writable', true);
                             }
 
                             if (function_exists('media_base_path') and is_dir(media_base_path()) and !is_writable(media_base_path())) {
                                 $check_pass = false;
                                 $must_be = media_base_path();
-                                $server_check_errors['media_base_path'] = _e('O diretório ' . media_base_path() . ' deve ser gravável', true);
+                                $server_check_errors['media_base_path'] = _e('The directory ' . media_base_path() . ' must be writable', true);
                             }
                             ?>
 
                             <?php if ($check_pass == false): ?>
                                 <?php if (!empty($server_check_errors)): ?>
-                                    <h5 class="font-weight"><?php _e('Verificação do servidor'); ?></h5>
-                                    <h6 class="font-weight"><?php _e('Existem alguns erros no seu servidor que impedirão o Bitstore Builder de funcionar corretamente'); ?></h6>
+                                    <h5 class="font-weight"><?php _e('Server check'); ?></h5>
+                                    <h6 class="font-weight"><?php _e('There are some errors on your server that will prevent Microweber from working properly'); ?></h6>
                                     <ol class="error">
                                         <?php foreach ($server_check_errors as $server_check_error): ?>
                                             <li> <?php print $server_check_error; ?> </li>
@@ -520,7 +520,7 @@
                                         <div>
                                             <div id="mw_db_setup_toggle" <?php if ($hide_db_setup == true): ?> style="display:none;" <?php endif; ?>>
                                                 <?php if (!$hide_db_setup): ?>
-                                                    <h4><?php _e('Servidor de banco de dados'); ?></h4>
+                                                    <h4><?php _e('Database Server'); ?></h4>
                                                 <?php else: ?>
                                                     <h4>
                                                         <button type="button" class="btn btn-secondary" onclick="$('#mw_db_setup_toggle').toggle();"><?php _e('Database Server'); ?></button>
@@ -531,7 +531,7 @@
 
                                                 <div class="form-group">
                                                     <label class="control-label">Database Engine</label>
-                                                    <small class="text-muted d-block mb-2">Escolha o tipo de banco de dados</small>
+                                                    <small class="text-muted d-block mb-2">Choose the database type</small>
 
                                                     <select class="form-control" name="db_driver" onchange="showForm(this)" autocomplete="off" tabindex="1">
                                                         <?php foreach ($dbEngines as $engine): ?>
@@ -548,40 +548,40 @@
                                                 <div id="db-form">
                                                     <div class="form-group">
                                                         <label class="control-label"><?php _e('Hostname'); ?></label>
-                                                        <small class="text-muted d-block mb-2"><?php _e('O endereço do seu servidor de banco de dados'); ?></small>
+                                                        <small class="text-muted d-block mb-2"><?php _e('The address of your database server'); ?></small>
                                                         <input type="text" class="form-control" autofocus name="db_host" tabindex="2" value="<?php if (isset($config['host'])): ?><?php print $config['host']; ?><?php endif; ?>"/>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label class="control-label"><?php _e('Nome do Usuário'); ?></label>
-                                                        <small class="text-muted d-block mb-2"><?php _e('O nome de usuário do seu banco de dados.'); ?></small>
+                                                        <label class="control-label"><?php _e('Username'); ?></label>
+                                                        <small class="text-muted d-block mb-2"><?php _e('The username of your database.'); ?></small>
                                                         <input type="text" class="form-control" name="db_user" tabindex="2" value="<?php if (isset($config['username'])): ?><?php print $config['username']; ?><?php endif; ?>"/>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label class="control-label"><?php _e('Password'); ?></label>
-                                                        <small class="text-muted d-block mb-2"><?php _e('A senha do seu banco de dados.'); ?></small>
+                                                        <small class="text-muted d-block mb-2"><?php _e('The password of your database.'); ?></small>
                                                         <input type="password" class="form-control" name="db_pass" tabindex="2" value="<?php if (isset($config['password'])): ?><?php print $config['password']; ?><?php endif; ?>"/>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label class="control-label"><?php _e('Database'); ?></label>
-                                                        <small class="text-muted d-block mb-2"><?php _e('O nome do seu banco de dados.'); ?></small>
+                                                        <small class="text-muted d-block mb-2"><?php _e('The name of your database.'); ?></small>
                                                         <input type="text" class="form-control" name="db_name" id="db_name_value" tabindex="2" value="<?php if (isset($config['database'])): ?><?php print $config['database']; ?><?php endif; ?>"/>
                                                     </div>
                                                 </div>
 
                                                 <div id="db-form-sqlite" style="display:none">
                                                     <div class="form-group">
-                                                        <label class="control-label"><?php _e('Arquivo de Database'); ?> </label>
-                                                        <small class="text-muted d-block mb-2"><?php _e('Um caminho de arquivo gravável que pode ser relativo à raiz da instalação do Bitstore Builder'); ?></small>
+                                                        <label class="control-label"><?php _e('Database file'); ?> </label>
+                                                        <small class="text-muted d-block mb-2"><?php _e('A writable file path that may be relative to the root of your Microweber installation'); ?></small>
                                                         <input type="text" class="form-control" autofocus name="db_name_sqlite" tabindex="2" value="<?php if (isset($config['db_name_sqlite'])): ?><?php print $config['db_name_sqlite']; ?><?php endif; ?>"/>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label class="control-label"><?php _e('Prefixo da Tabela'); ?></label>
-                                                    <small class="text-muted d-block mb-2"><?php _e('Altere isso se desejar instalar várias instâncias do Bistore Builder neste banco de dados. Somente letras e números latinos são permitidos.'); ?></small>
+                                                    <label class="control-label"><?php _e('Table Prefix'); ?></label>
+                                                    <small class="text-muted d-block mb-2"><?php _e('Change this If you want to install multiple instances of Microweber to this database. Only latin letters and numbers are allowed.'); ?></small>
                                                     <input type="text" class="form-control" name="table_prefix" tabindex="3" value="<?php if (isset($config['prefix'])): ?><?php print $config['prefix']; ?><?php endif; ?>" onblur="prefix_add(this)"/>
                                                 </div>
                                             </div>
@@ -598,7 +598,7 @@
 
                                                 <?php if (is_array($templates) and !empty($templates)): ?>
                                                     <div class="form-group">
-                                                        <h5 class="text-primary mb-3 text-center"><?php print 'Escolha o seu Template preferido'; ?></h5>
+                                                        <h5 class="text-primary mb-3 text-center"><?php print 'Choose your preferred design'; ?></h5>
 
                                                         <div class="row">
                                                             <div class="col-auto">
@@ -653,15 +653,15 @@
                                                     <div class="form-group">
                                                         <div class="custom-control custom-checkbox">
                                                             <input type="checkbox" class="custom-control-input" id="with_default_content" name="with_default_content" value="1" tabindex="7" checked="">
-                                                            <label class="custom-control-label" for="with_default_content"><?php _e('Importar conteúdo padrão'); ?></label>
+                                                            <label class="custom-control-label" for="with_default_content"><?php _e('Import default content'); ?></label>
                                                         </div>
-                                                        <small class="text-muted d-block mb-2"><?php _e('Se marcado, algum conteúdo padrão será adicionado.'); ?></small>
+                                                        <small class="text-muted d-block mb-2"><?php _e('If checked, some default content will be added.'); ?></small>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-12">
-                                                    <b><?php _e('Idioma padrão do site'); ?></b>
-                                                    <small class="text-muted d-block mb-2"><?php _e('Escolha o idioma com o qual deseja começar.'); ?></small>
+                                                    <b><?php _e('Website Default Language'); ?></b>
+                                                    <small class="text-muted d-block mb-2"><?php _e('Choose the language you want to start with.'); ?></small>
                                                     <?php $currentLang = current_lang(); ?>
                                                     <div class="form-group">
                                                         <?php
@@ -684,7 +684,7 @@
                                         <div id="admin-user" <?php if ($pre_configured == true): ?><?php endif; ?>>
                                             <div class="mw-ui-col-container">
                                                 <div class="admin-setup">
-                                                    <h4><?php print 'Informação de Login'; ?></h4>
+                                                    <h4><?php print 'Login Information'; ?></h4>
                                                     <hr class="thin">
 
                                                     <div class="row">
@@ -718,10 +718,10 @@
                                                             <div class="form-group">
                                                                 <div class="custom-control custom-checkbox">
                                                                     <input type="checkbox" class="custom-control-input" id="subscribe_for_update_notification" name="subscribe_for_update_notification" value="1" tabindex="13" checked="">
-                                                                    <label class="custom-control-label" for="subscribe_for_update_notification"><?php _e('Update notificação'); ?></label>
+                                                                    <label class="custom-control-label" for="subscribe_for_update_notification"><?php _e('Update nofitication'); ?></label>
                                                                 </div>
 
-                                                                <small class="text-muted d-block mb-2"><?php _e('Se marcada, você receberá notificações de atualização quando uma nova versão estiver disponível.'); ?></small>
+                                                                <small class="text-muted d-block mb-2"><?php _e('If checked, you will get update notifications when new version is avaiable.'); ?></small>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -731,7 +731,7 @@
 
                                         <div class="mt-2 mb-4">
                                             <div class="text-right">
-                                                <button type="button" href="javascript:void(0);" class="btn btn-link px-0" onClick="$('.advanced-options-installation').toggle()" tabindex="14">Mostrar opção de avanço</button>
+                                                <button type="button" href="javascript:void(0);" class="btn btn-link px-0" onClick="$('.advanced-options-installation').toggle()" tabindex="14">Show advanced options</button>
                                             </div>
 
                                             <div class="advanced-options-installation mt-2" style="display:none;">
@@ -757,10 +757,10 @@
                                 </form>
                             <?php endif; ?>
                         <?php else: ?>
-                            <h2><?php _e('Bem-vindo ao seu novo website!'); ?></h2>
+                            <h2><?php _e('Welcome to your new website!'); ?></h2>
                             <br/>
                             <a href="<?php print site_url() ?>admin" class="mw-ui-btn mw-ui-btn-info pull-left">
-                                <?php _e('Faça login no painel de administração'); ?>
+                                <?php _e('Login to admin panel'); ?>
                             </a> <a href="<?php print site_url() ?>" class="mw-ui-btn pull-left"
                                     style="margin-left: 20px;">
                                 <?php _e('Visit your site'); ?>
@@ -770,14 +770,14 @@
                     </div>
                     <div id="mw-install-done" style="display:none">
                         <h2>
-                            <?php _e('A instalação está concluída'); ?>
+                            <?php _e('Installation is completed'); ?>
                         </h2>
                         <br/>
                         <a href="<?php print site_url() ?>" class="mw-ui-btn">
-                            <?php _e('Visite seu site'); ?>
+                            <?php _e('Visit your site'); ?>
                         </a>
                         <a href="<?php print site_url() ?>admin" class="mw-ui-btn mw-ui-btn-info">
-                            <?php _e('Faça login no painel de administração'); ?>
+                            <?php _e('Login to admin panel'); ?>
                         </a>
                     </div>
                 </div>
