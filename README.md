@@ -1,6 +1,6 @@
 <img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/bitstore-builder-logo.jpg">
 <p align="left">
-    <a href="./CHANGELOG.md"><img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/bitstoreversion.svg" alt="Última versão"></a>
+    <a href="./CHANGELOG.md"><img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/bitstore-builder-version.svg" alt="Última versão"></a>
     <a href="https://www.php.net/releases/7.0/pt_BR.php" target="_blank"><img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/php.svg" alt="PHP:7"></a>
     <a href="https://www.javascript.com/" target="_blank"><img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/javascript.svg" alt="JavaScript"></a>
     <a href="https://www.w3schools.com/html/"><img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/html5.svg" alt="HTML5"></a>
