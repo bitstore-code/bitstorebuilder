@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="104" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="104" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
  <metadata>
   <rdf:RDF>
    <cc:Work rdf:about="">
@@ -20,15 +20,15 @@
   </linearGradient>
  </defs>
  <g transform="translate(0 -32.961)" fill="none" fill-rule="evenodd" font-family="'DejaVu Sans', Verdana, Geneva, sans-serif" font-size="11px">
-  <g transform="translate(0 32.961)">
-   <path d="m0 3c0-1.6569 1.3552-3 3.027-3h50.973v20h-50.973c-1.6718 0-3.027-1.3431-3.027-3z" fill="url(#linearGradient91)" fill-rule="nonzero"/>
-   <text x="-11.391995" fill="#010101" fill-opacity=".3"><tspan x="10.806203" y="15">licence</tspan></text>
-   <text x="-11.391995" fill="#ffffff"><tspan x="10.806203" y="14">license</tspan></text>
-  </g>
   <g transform="translate(54 32.961)">
+   <g transform="translate(-54)">
+    <path d="m0 3c0-1.6569 1.3552-3 3.027-3h50.973v20h-50.973c-1.6718 0-3.027-1.3431-3.027-3z" fill="url(#linearGradient91)" fill-rule="nonzero"/>
+    <text x="-11.391995" fill="#010101" fill-opacity=".3"><tspan x="10.806203" y="15">licence</tspan></text>
+    <text x="-11.391995" fill="#ffffff"><tspan x="10.806203" y="14">license</tspan></text>
+   </g>
    <path d="m0 0h46.939c1.69 0 3.061 1.343 3.061 3v14c0 1.657-1.37 3-3.061 3h-46.939z" fill="url(#linearGradient978)" fill-rule="nonzero"/>
-   <text fill="#010101" fill-opacity=".3"><tspan x="4" y="15">GPL 3</tspan></text>
-   <text fill="#ffffff"><tspan x="4" y="14">GPL 3</tspan></text>
+   <text x="11.407026" fill="#010101" fill-opacity=".3"><tspan x="15.407026" y="15">MIT</tspan></text>
+   <text x="11.407026" fill="#ffffff"><tspan x="15.407026" y="14">MIT</tspan></text>
   </g>
  </g>
 </svg>
