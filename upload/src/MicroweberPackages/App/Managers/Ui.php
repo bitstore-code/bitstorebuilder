@@ -244,4 +244,18 @@ class Ui
 
         return $link;
     }
+    
+    public function bitstore_powered_by_link()
+    {
+        if ($this->disable_powered_by_link != false) {
+            return;
+        }
+        $link = '<span class="mw-powered-by"><a href="https://www.bitstore.com.br/" title="Bitstore">Bitstore Builder</a> <span>desenvolvido por</span> <a href="https://www.bitstore.com.br" target="_blank" title="Bitstore">Bitstore</a></span>';
+        if ($this->powered_by_link != false) {
+            $link = $this->powered_by_link;
+        }
+
+        return $link;
+    }
+    
 }
