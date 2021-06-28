@@ -164,7 +164,7 @@
                 });
 
                 if (window.navigator.onLine) {
-                    option += '<option value="_get_more">get more...</option>';
+                    option += '<option value="_get_more">ver mais...</option>';
                 }
 
                 $("#default_template").html('');
@@ -362,7 +362,8 @@
 
 
 <div class="installholder">
-    <small class="text-muted d-block text-right mb-2">v. <?php print MW_VERSION ?></small>
+    <!-- small class="text-muted d-block text-right mb-2">v. <?php //print MW_VERSION ?></small -->
+    <small class="text-muted d-block text-right mb-2">v. <?php print BT_VERSION ?></small>
 
     <div class="card">
         <div class="card-header d-block">
@@ -598,7 +599,7 @@
 
                                                 <?php if (is_array($templates) and !empty($templates)): ?>
                                                     <div class="form-group">
-                                                        <h5 class="text-primary mb-3 text-center"><?php print 'Escolha o seu Template preferido'; ?></h5>
+                                                        <h5 class="text-primary mb-3 text-center"><?php print 'Escolha o seu Tema preferido'; ?></h5>
 
                                                         <div class="row">
                                                             <div class="col-auto">
@@ -731,12 +732,12 @@
 
                                         <div class="mt-2 mb-4">
                                             <div class="text-right">
-                                                <button type="button" href="javascript:void(0);" class="btn btn-link px-0" onClick="$('.advanced-options-installation').toggle()" tabindex="14">Mostrar opção de avanço</button>
+                                                <button type="button" href="javascript:void(0);" class="btn btn-link px-0" onClick="$('.advanced-options-installation').toggle()" tabindex="14">Mostrar opções avançadas</button>
                                             </div>
 
                                             <div class="advanced-options-installation mt-2" style="display:none;">
                                                 <div class="form-group">
-                                                    <label class="control-label"><?php _e('Admin URL'); ?></label>
+                                                    <label class="control-label"><?php _e('URL do Admin'); ?></label>
                                                     <input type="text" class="form-control" name="admin_url" value="admin" id="admin_url" tabindex="15"/>
                                                 </div>
                                             </div>
@@ -763,7 +764,7 @@
                                 <?php _e('Faça login no painel de administração'); ?>
                             </a> <a href="<?php print site_url() ?>" class="mw-ui-btn pull-left"
                                     style="margin-left: 20px;">
-                                <?php _e('Visit your site'); ?>
+                                <?php _e('Visite seu Website'); ?>
                             </a>
 
                         <?php endif; ?>
@@ -774,7 +775,7 @@
                         </h2>
                         <br/>
                         <a href="<?php print site_url() ?>" class="mw-ui-btn">
-                            <?php _e('Visite seu site'); ?>
+                            <?php _e('Visite seu Website'); ?>
                         </a>
                         <a href="<?php print site_url() ?>admin" class="mw-ui-btn mw-ui-btn-info">
                             <?php _e('Faça login no painel de administração'); ?>

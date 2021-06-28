@@ -15,6 +15,11 @@ if (!defined('MW_VERSION')) {
     define('MW_VERSION', '1.2.7');
 }
 
+if (!defined('BT_VERSION')) {
+    //remember to change also in version.txt
+    define('BT_VERSION', '0.0.1');
+}
+
 
 if (!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
