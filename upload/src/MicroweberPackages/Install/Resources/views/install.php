@@ -750,7 +750,7 @@
                                     <?php endif; ?>
 
                                     <input type="hidden" name="make_install" value="1" id="is_installed_<?php print $rand; ?>">
-                                    <input type="hidden" value="UTC" name="default_timezone"/>
+                                    <input type="hidden" value="America/Sao_Paulo" name="default_timezone"/>
 
                                     <div class="text-right">
                                         <button type="submit" name="submit" class="btn btn-primary" tabindex="16"><?php _e('Install'); ?></button>

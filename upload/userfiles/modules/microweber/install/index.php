@@ -478,7 +478,7 @@
 
             <div class="mw_clear"></div>
             <input name="IS_INSTALLED" type="hidden" value="no" id="is_installed_<?php print $rand; ?>">
-            <input type="hidden" value="UTC" name="default_timezone"/>
+            <input type="hidden" value="America/Sao_Paulo" name="default_timezone"/>
         </form>
     <?php endif; ?>
 <?php else: ?>
