@@ -244,8 +244,8 @@ class Ui
 
         return $link;
     }
-    
-    public function bitstore_powered_by_link()
+	
+	public function bt_powered_by_link()
     {
         if ($this->disable_powered_by_link != false) {
             return;
@@ -257,5 +257,5 @@ class Ui
 
         return $link;
     }
-    
+	
 }
