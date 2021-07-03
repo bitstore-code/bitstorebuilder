@@ -76,7 +76,7 @@ class InstallController extends Controller
 
         $connection = Config::get('database.connections');
 
-        $this->log('Preparing to install');
+        $this->log('Preparando para instalar');
         if (isset($input['make_install'])) {
             $config_only = false;
             if (isset($input['config_only']) and $input['config_only']) {
@@ -196,7 +196,7 @@ class InstallController extends Controller
                 if (!is_cli()) {
                     $_SERVER['argv'] = array();
                 }
-                $this->log('Generating key');
+                $this->log('Gerando chave');
                 /*if ($this->_can_i_use_artisan_key_generate_command()) {
                     Artisan::call('key:generate', [
                         '--force' => true,
@@ -209,7 +209,7 @@ class InstallController extends Controller
 
             }
 
-            $this->log('Saving config');
+            $this->log('Salvando configuração');
             Config::save($allowed_configs);
             Cache::flush();
 
@@ -224,13 +224,13 @@ class InstallController extends Controller
                     $this->log("error");
 
                     //  return ("Error: Could not connect to the database.  Please check your configuration. Error: " . $e->getMessage() .' on ' . $e->getLine() . " – " . $e->getFile() );
-                    return ("Error: Could not connect to the database.  Please check your configuration. " . $e->getMessage());
+                    return ("Erro: não foi possível conectar ao banco de dados. Por favor, verifique sua configuração. " . $e->getMessage());
                 }
 
                 try {
                     DB::connection($dbDriver)->getDatabaseName();
                 } catch (\Exception $e) {
-                    $this->log('Error in database connection');
+                    $this->log('Erro na conexão do banco de dados');
                     return 'Error: ' . $e->getMessage() . "\n";
                 }
 
@@ -248,7 +248,7 @@ class InstallController extends Controller
                 }
 
                 if (!$install_step or $install_step == 1) {
-                    $this->log('Setting up database');
+                    $this->log('Configurando banco de dados');
                     $installer = new Install\DbInstaller();
                     $installer->logger = $this;
                     $installer->run();
@@ -260,14 +260,14 @@ class InstallController extends Controller
                 }
 
                 if (!$install_step or $install_step == 3) {
-                    $this->log('Setting up modules');
+                    $this->log('Configurando módulos');
                     $installer = new Install\ModulesInstaller();
                     $installer->logger = $this;
                     $installer->run();
                 }
 
                 if (!$install_step or $install_step == 4) {
-                    $this->log('Setting up template');
+                    $this->log('Configurando o tema');
                     $installer = new Install\TemplateInstaller();
                     if (isset($input['site_lang'])) {
                         $installer->setLanguage($input['site_lang']);
@@ -279,7 +279,7 @@ class InstallController extends Controller
                 }
 
                 if (!$install_step or $install_step == 5) {
-                    $this->log('Setting up default options');
+                    $this->log('Configurando opções padrão');
                     $installer = new Install\DefaultOptionsInstaller();
                     if (isset($input['site_lang'])) {
                         $installer->setLanguage($input['site_lang']);
@@ -288,7 +288,7 @@ class InstallController extends Controller
                 }
 
                 if (!$install_step or $install_step == 6) {
-                    $this->log('Setting up modules after template install');
+                    $this->log('Configurando módulos após a instalação do modelo');
                     $installer = new Install\ModulesInstaller();
                     $installer->logger = $this;
                     $installer->run();
@@ -343,7 +343,7 @@ class InstallController extends Controller
                         $check_if_has_admin = (new User())->where('is_admin',1)->first();
 
                         if(!$check_if_has_admin) {
-                            $this->log('Adding admin user');
+                            $this->log('Adicionando usuário administrador');
 
                             $adminUser = new User();
                             $adminUser->username = $input['admin_username'];
@@ -360,7 +360,7 @@ class InstallController extends Controller
                     }
                 }
 
-                $this->log('Saving ready config');
+                $this->log('Salvando configuração pronta');
 
                 Config::set('microweber.is_installed', 1);
 
