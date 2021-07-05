@@ -27,8 +27,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="container align-self-centerx">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 text-center m-b-20 mx-auto">
-                    <h1 class="m-b-10">Our Team</h1>
-                    <p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                    <h1 class="m-b-10">Nosso time</h1>
+                    <p class="lead">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao examinar seu layout.</p>
                     <hr class="hr"/>
                 </div>
             </div>
@@ -41,7 +41,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <div class="square">
                                     <div class="content allow-drop">
                                         <h5>Charley Doe</h5>
-                                        <p class="m-t-10">Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.</p>
+                                        <p class="m-t-10">Charley é desenvolvedor sênior em nossa empresa. Ele está desenvolvendo ótimas soluções de código e software. Educado em Sofia, Bulgária.</p>
 
                                         <div class="element socials-holder">
                                             <module type="social_links"/>

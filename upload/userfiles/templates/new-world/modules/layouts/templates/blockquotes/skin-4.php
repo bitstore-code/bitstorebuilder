@@ -28,8 +28,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="container align-self-centerx">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 text-center m-b-20 mx-auto">
-                    <h1 class="m-b-10">Clients Opinions</h1>
-                    <p class="lead">Read what our lients says for our services.</p>
+                    <h1 class="m-b-10">Opiniões dos clientes</h1>
+                    <p class="lead">Leia o que nossos clientes dizem sobre nossos serviços.</p>
                 </div>
             </div>
 

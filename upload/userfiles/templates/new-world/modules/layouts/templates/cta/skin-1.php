@@ -32,7 +32,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="row info-holder">
                     <div class="col-9 col-sm-7 col-md-8">
                         <div class="h-100 d-flex align-items-center justify-content-left">
-                            <h3 class="m-b-5">Call to Action Section Here</h3>
+                            <h3 class="m-b-5">Seção de apelo à ação aqui</h3>
                         </div>
                     </div>
 

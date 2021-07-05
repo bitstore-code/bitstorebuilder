@@ -29,9 +29,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-xl-10 mx-auto">
                 <div class="row">
                     <div class="col-xl-6 text-center text-lg-left m-b-40 allow-drop">
-                        <h2 class="hr">Why to Contact Us?</h2>
-                        <p>Microweber is an open-source content management system and website builder.
-                            It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple displays.</p>
+                        <h2 class="hr">Por que entrar em contato conosco?</h2>
+                        <p>A Bistore Builder é um sistema de gerenciamento de conteúdo, construtor de websites e E-commerce.
+                             É baseado na linguagem de programação PHP e no framework de aplicação web Laravel 8, usando arrastar e soltar e permitindo aos usuários criar conteúdo rapidamente, enquanto agendam e gerenciam múltiplas exibições.</p>
                         <br/>
                         <br/>
 
@@ -48,8 +48,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <i class="mw-icon mw-micon-Building safe-element"></i>
                                     </div>
                                     <div class="text-holder allow-drop">
-                                        <p><strong>Address</strong></p>
-                                        <p>Sofia, Bulgaria, bul. Cherni Vruh 47. Floor 5, Building A</p>
+                                        <p><strong>Endereço</strong></p>
+                                        <p>Rua Castelo Branco, nº 002, Jardim das Flores</p>
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +60,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <i class="mw-icon mw-micon-Smartphone-3 safe-element"></i>
                                     </div>
                                     <div class="text-holder allow-drop">
-                                        <p><strong>Phone</strong></p>
-                                        <p>00359 878 998 778 ( Office ) 00359 878 887 887 ( Sales)</p>
+                                        <p><strong>Telefone</strong></p>
+                                        <p>99 99999 0909 ( Comercial ) 99 99999 0909 ( Vendas)</p>
                                     </div>
                                 </div>
                             </div>
@@ -72,8 +72,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <i class="mw-icon mw-micon-Email safe-element"></i>
                                     </div>
                                     <div class="text-holder allow-drop">
-                                        <p><strong>Other ways to contact us</strong></p>
-                                        <p>Email: info@youremail.com</p>
+                                        <p><strong>Outras maneiras de nos contatar</strong></p>
+                                        <p>Email: info@seuemail.com</p>
                                     </div>
 
                                     <div class="socials-holder">

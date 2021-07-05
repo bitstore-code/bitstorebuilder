@@ -36,8 +36,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                             <div class=" m-b-20">
                                 <div class="allow-drop">
-                                    <h2 class="m-b-30">It is the new generation</h2>
-                                    <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework.</p>
+                                    <h2 class="m-b-30">É a nova geração</h2>
+                                    <p>A Bitstore Builder é um sistema de gerenciamento de conteúdo, construtor de websites e E-commerce. É baseado na linguagem de programação PHP e no framework de aplicação web Laravel 8</p>
                                 </div>
                             </div>
                         </div>
@@ -50,8 +50,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                             <div class=" m-b-20">
                                 <div class="allow-drop">
-                                    <h2 class="m-b-30">Unique design</h2>
-                                    <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework.</p>
+                                    <h2 class="m-b-30">Design único</h2>
+                                    <p>A Bitstore Builder é um sistema de gerenciamento de conteúdo, construtor de websites e E-commerce. É baseado na linguagem de programação PHP e no framework de aplicação web Laravel 8</p>
                                 </div>
                             </div>
                         </div>

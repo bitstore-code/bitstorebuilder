@@ -28,7 +28,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="container">
         <div class="row element m-b-40">
             <div class="col-12 text-center allow-drop">
-                <h2 class="hr">Our Partners</h2>
+                <h2 class="hr">Nossos Parceiros</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>

@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="row">
                     <div class="col-md-12 col-lg-4 col-xl-4">
                         <div class="p-40 text-center text-lg-left">
-                            <h3>Service and contact</h3>
+                            <h3>Atendimento e contato</h3>
                         </div>
                     </div>
 
@@ -41,8 +41,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="info allow-drop">
-                                <h4 class="m-b-10">Need help?</h4>
-                                <p>Contact us at +000 111 222</p>
+                                <h4 class="m-b-10">Preciso de ajuda?</h4>
+                                <p>Entre em contato conosco pelo telefone +000 111 222</p>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                             <div class="info allow-drop">
                                 <h4 class="m-b-10">Chat</h4>
-                                <p>Chat with our friendly team!</p>
+                                <p>Converse com nossa simpática equipe!</p>
                                 <br />
 
                                 <module type="btn" template="bootstrap" button_style="btn-primary" text="Chat now" />
