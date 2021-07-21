@@ -29,9 +29,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row">
             <div class="col-12 allow-drop">
                 <div  style="text-align: center">
-                <h2 class="hr">Build a website, it's easy and free</h2>
+                <h2 class="hr">Crie um Website, é fácil e rápido</h2>
                 </div>
-                <p class="lead" style="text-align: center">Professional developers can freely access the code, exchanging their knowledge and contributions with the rest of the open-source community</p>
+                <p class="lead" style="text-align: center">Os desenvolvedores profissionais podem acessar o código livremente, trocando seus conhecimentos e contribuições com o resto da comunidade de código aberto</p>
             </div>
         </div>
     </div>

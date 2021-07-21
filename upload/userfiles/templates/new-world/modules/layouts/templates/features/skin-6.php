@@ -32,25 +32,25 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         <div class="icon-holder col-12 col-sm-3 mx-auto cloneable">
                             <i class="icon mw-micon-Sunglasses-2 safe-element"></i>
                             <h6><span class="js-start-from-zero safe-element" data-counter>300</span></h6>
-                            <h6>Sunny days</h6>
+                            <h6>Dias ensolarados</h6>
                         </div>
 
                         <div class="icon-holder col-12 col-sm-3 mx-auto cloneable">
                             <i class="icon mw-micon-Open-Book safe-element"></i>
                             <h6><span class="js-start-from-zero safe-element" data-counter>50</span></h6>
-                            <h6>New books</h6>
+                            <h6>Novos livros</h6>
                         </div>
 
                         <div class="icon-holder col-12 col-sm-3 mx-auto cloneable">
                             <i class="icon mw-micon-Handshake safe-element"></i>
                             <h6><span class="js-start-from-zero safe-element" data-counter>100</span></h6>
-                            <h6>New friends</h6>
+                            <h6>Novos amigos</h6>
                         </div>
 
                         <div class="icon-holder col-12 col-sm-3 mx-auto cloneable">
                             <i class="icon mw-micon-Cranium safe-element"></i>
                             <h6><span class="js-start-from-zero safe-element" data-counter>1000</span></h6>
-                            <h6>Hours coding</h6>
+                            <h6>Houras trabalho</h6>
                         </div>
                     </div>
                 </div>

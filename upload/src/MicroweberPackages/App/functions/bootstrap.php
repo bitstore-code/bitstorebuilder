@@ -17,7 +17,7 @@ if (!defined('MW_VERSION')) {
 
 if (!defined('BT_VERSION')) {
     //remember to change also in version.txt
-    define('BT_VERSION', '0.0.2');
+    define('BT_VERSION', '0.0.3');
 }
 
 

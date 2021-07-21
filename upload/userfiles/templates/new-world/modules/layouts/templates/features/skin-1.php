@@ -35,9 +35,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30">Beautiful Website</h4>
+                                <h4 class="m-b-30">Lindo Website</h4>
 
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
+                                <p>É um fato estabelecido há muito tempo que um leitor será distraído pelo conteúdo legível de uma página quando .</p>
                             </div>
                         </div>
                     </div>
@@ -49,9 +49,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30">Modern Design</h4>
+                                <h4 class="m-b-30">Moderno Design</h4>
 
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
+                                <p>É um fato estabelecido há muito tempo que um leitor será distraído pelo conteúdo legível de uma página quando .</p>
                             </div>
                         </div>
                     </div>
@@ -63,9 +63,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30">Easy Interface</h4>
+                                <h4 class="m-b-30">Interface Fácil</h4>
 
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
+                                <p>É um fato estabelecido há muito tempo que um leitor será distraído pelo conteúdo legível de uma página quando .</p>
                             </div>
                         </div>
                     </div>

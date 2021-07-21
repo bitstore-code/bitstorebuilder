@@ -19,11 +19,12 @@ O **projeto Bitstore Builder** é um fork do projeto Microweber. Tem como objeti
 ## Roteiro
 
 ### Tarefas concluídas:
-- [x] Criado a pasta upload da versão 0.0.1.
+- [x] Criado a pasta upload da versão 0.0.3.
+- [x] Colocar o install para o idioma pt_BR.
 
 ### Tarefas em andamento:
 - [ ] Montando o repositório inicial bitstore-builder.
 
 ### Próximas tarefas:
-- [ ] Colocar o install para o idioma pt_BR.
 
+- [ ] Traduzir parte de edição do website.
