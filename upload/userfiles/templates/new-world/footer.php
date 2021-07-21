@@ -31,11 +31,16 @@
 
             <div class="row">
                 <div class="col-md-6 text-center text-md-left edit" field="new-world_footer_copyright" rel="global">
-                    <p>All Rights Reserved © <?php date('Y'); ?> - Your Brand Ltd.</p>
+                    <p>Todos os Direitos Reservado © <?php date('Y'); ?> - Sua Marca Ltd.</p>
                 </div>
 
                 <div class="col-md-6 text-center text-md-right">
-                    <p><?php print powered_by_link(); ?></p>
+                    <!--p><?php //print powered_by_link(); ?></p-->
+                    Desenvolvido por 
+                    <a href="https://www.bitstore.com.br">
+                        <img src="<?php print template_url(); ?>assets/img/logo-bitstore-footer.svg" class="img-fluid" style="float: right;
+                                 margin: 0px 0px 10px;" alt="Responsive image">
+                    </a> 
                 </div>
             </div>
         </div>
