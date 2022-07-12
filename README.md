@@ -1,3 +1,4 @@
+![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
 <img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/bitstore-builder-logo.jpg">
 <p align="left">
     <a href="./CHANGELOG.md"><img src="https://github.com/bitstore-brasil/bitstore-builder/blob/master/img/bitstore-builder-version.svg" alt="Última versão"></a>
