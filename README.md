@@ -1,9 +1,7 @@
 ![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
-![bitstore-builder-version.svg](img/bitstore-builder-version.svg)
-  
     ![bitstore-builder-version](img/bitstore-builder-version.svg)
     ![php](img/php.svg)
-    ![javascript](img/javascript.svg
+    ![javascript](img/javascript.svg)
     ![html5](img/html5.svg)
     ![css3](img/css3.svg)
     ![test](img/test.svg)
