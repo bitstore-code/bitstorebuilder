@@ -1,7 +1,5 @@
 ![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
-![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
-<p align="left">
-    ![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
+  
     ![bitstore-builder-version](img/bitstore-builder-version.svg)
     ![php](img/php.svg)
     ![javascript](img/javascript.svg
@@ -10,7 +8,6 @@
     ![test](img/test.svg)
     ![licenca](img/licenca.svg)
     ![microwerber-version](img/microwerber-version.svg)
-</p>
 
 ### Projeto Bitstore Builder
 
