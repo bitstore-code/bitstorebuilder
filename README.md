@@ -1,4 +1,5 @@
 ![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
+![bitstore-builder-version.svg](img/bitstore-builder-version.svg)
   
     ![bitstore-builder-version](img/bitstore-builder-version.svg)
     ![php](img/php.svg)
