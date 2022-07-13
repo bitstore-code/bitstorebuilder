@@ -1,6 +1,7 @@
 ![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
 
 <p align="left">
+    ![bitstore-builder-logo](img/bitstore-builder-logo.jpg)
     ![bitstore-builder-version](img/bitstore-builder-version.svg)
     ![php](img/php.svg)
     ![javascript](img/javascript.svg
